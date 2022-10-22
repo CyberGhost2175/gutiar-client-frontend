@@ -1,0 +1,28 @@
+
+
+  
+
+    <div class="auth">
+        
+        <div class="circle"></div>
+        <div class="register-form-container">
+            <form [formGroup]="form" (submit)="submit()">
+                <h1 class="h3 mb-3 fw-normal">Регистрация</h1>
+              
+                <input formControlName="first_name" class="form-control" placeholder="Имя" required>
+              
+                <input formControlName="last_name" class="form-control" placeholder="Фамилия" required>
+              
+                <input formControlName="email" type="email" class="form-control" placeholder="Email" required>
+              
+                <input formControlName="password" type="password" class="form-control" placeholder="Пароль" required>
+              
+                <button  class="button button-googletype" type="submit">Зарегестрироваться</button>
+              </form>
+              
+        </div>
+    </div>
+
+      
+      
+      

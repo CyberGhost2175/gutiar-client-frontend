@@ -1,0 +1,43 @@
+.container {
+    margin-top:100px;
+}
+.card{
+
+    height: 50vh;;
+    margin: 25px;;
+    padding: 25px;
+}
+.center{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.center img{
+    
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+    height: 162px;
+    width: 250px; 
+    
+    margin: 20px 0px;
+}
+.card h5{
+    text-align: center;
+font-weight: bold;
+    font-size: 20px;;
+}
+.center h4,h6, button{
+    font-size: 20px;;
+}
+table thead, tbody{
+    font-size: 20px;;
+}
+table img{
+    width: 200px;
+    height: 250px;;
+}

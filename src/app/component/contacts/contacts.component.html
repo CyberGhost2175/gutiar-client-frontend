@@ -1,0 +1,13 @@
+
+<div class="contact-form">
+<form [formGroup]="form" (submit)="submit()" method="post">
+    <input formControlName="name" type="text" class="form-control" placeholder="Имя" required>
+
+    <input formControlName="email" type="email" class="form-control" placeholder="Email" required>
+    <input formControlName="content" type="text" class="form-control" placeholder="Пожелания" required>
+    <div class="d-grid gap-2">
+    <button type="button" class="btn btn-outline-light">Отправить</button>
+    </div>
+</form>
+
+</div>

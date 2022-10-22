@@ -1,0 +1,12 @@
+
+    
+    <div class="main-block" *ngIf="guitars$ | async as guitars">
+        <h1 >Гитары</h1>
+        <div class="search" id="search">
+            <input type="text" class="form-control" aria-label="Sizing" placeholder="гитара..." [(ngModel)]="term"/>
+        </div>
+        <div class="catalog">
+                <app-guitar *ngFor="let guitar of guitars | filterGuitars: term; let i = index" 
+                [guitar]="guitar"></app-guitar>
+        </div>
+    </div>

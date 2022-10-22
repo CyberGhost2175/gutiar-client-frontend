@@ -1,0 +1,56 @@
+
+<ng-container *ngIf="products.length !=0">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Название товара</th>
+                            <th>Изображение товара</th>
+                            <th>Цена</th>
+                            <th>Количество</th>
+                            <th>Итог</th>
+                            <th>Действие</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let item of products; let i = index">
+                        <tr>
+                            <td> {{item.brand}}</td>
+                            <td><img src="{{item.image}}" alt=""></td>
+                            <td>{{item.price}} $</td>
+                            <td>{{item.quantity}}</td>
+                            <td>{{item.total}}</td>
+                            <td>
+                                
+                                <button  (click)="removeItem(item)" class=" btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tr>
+                        <td><button (click)="emptycart()" class="btn btn-danger" style="color: #000;">Очистить корзину</button></td>
+                        <td><strong>Grand Total : ${{grandTotal}}</strong></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="products.length ==0">
+    
+    <div class="container">
+    
+        <div class="card">
+            <h5 class="card-title"> Моя корзина</h5>
+    
+        </div>
+        <div class="center">
+            <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="">
+            <h4> Ваша корзина пуста</h4>
+            <h6>Добавьте что нибудь !</h6>
+            <button routerLink="/guitars" class="btn btn-primary"> Перейти к покупкам</button>
+        </div>
+    </div>
+</ng-container>

@@ -1,0 +1,23 @@
+.search{
+    width: 20%;;
+    padding-top: 40px;;
+    margin: 0 auto;
+}
+.main-block{
+    background:url("../../images/main.jpg") no-repeat;
+    min-height: 100vh;
+
+    background-size: cover;
+    
+    background-position: center;
+
+}
+.catalog{
+    margin-top: 20px;;
+ display: flex;
+ justify-content: center;
+   
+    
+}
+
+

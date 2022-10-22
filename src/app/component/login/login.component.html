@@ -1,0 +1,26 @@
+
+
+
+    <div class="auth">
+        
+        <div class="circle"></div>
+        <div class="register-form-container">
+            <form [formGroup]="form" (submit)="submit()" method="post">
+                <h1 class="form-title">
+                    Авторизация
+                </h1>
+                <input formControlName="email" type="email" class="form-control" placeholder="Email" required>
+      
+                <input formControlName="password" type="password" class="form-control" placeholder="Password" required>
+                <div class="form-buttons">
+                   <button class="button" type="submit">Войти</button>
+                   
+                   <a routerLink="/register" class="button button-google">еще не зарегестрированы?</a>
+               </div>
+            </form>
+        </div>
+    </div>
+
+      
+      
+      
